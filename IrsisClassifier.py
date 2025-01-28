@@ -12,7 +12,7 @@ X = iris.data  # Features: sepal length, sepal width, petal length, petal width
 y = iris.target  # Labels: 0 = setosa, 1 = versicolor, 2 = virginica
 
 # Step 2: Split the data into training and testing sets
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
 model = LogisticRegression(max_iter=200)  # max_iter set higher to ensure convergence
 model.fit(X_train, y_train)
